@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/tienda.css">
+    <title>Tienda - UrTianguis</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1 class="logo">UrTianguis</h1>
+            <ul>
+                <li><a href="index.html" class="menu-button">Inicio</a></li>
+                <li><a href="tienda.html" class="menu-button">Tienda</a></li>
+                <li><a href="crear-outfit.html" class="menu-button">Crear Outfit</a></li>
+                <li><a href="sobre-nosotros.html" class="menu-button">Sobre Nosotros</a></li>
+                <li><a href="contacto.html" class="menu-button">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="search-container">
+            <input type="text" class="search-bar" placeholder="Buscar prendas..." id="searchInput">
+            <select class="filter-dropdown" id="filterDropdown" onchange="filterItems()">
+                <option value="">Filtrar por Prenda</option>
+                <option value="polo">Polo</option>
+                <option value="camiseta">Camiseta</option>
+                <option value="pantalon">Pantalón</option>
+                <option value="polera">Polera</option>
+                <option value="chaqueta">Chaqueta</option>
+            </select>
+        </div>
+
+        <section class="imagenes-tienda" id="itemContainer">
+            <div class="imagen-wrapper">
+                <img src="tipoPrendas/camiseta.jpg" alt="Camiseta" class="img-tienda">
+                <p>Camiseta</p>
+            </div>
+            <div class="imagen-wrapper">
+                <img src="tipoPrendas/chaqueta.jpg" alt="Chaqueta" class="img-tienda">
+                <p>Chaqueta</p>
+            </div>
+            <div class="imagen-wrapper">
+                <img src="tipoPrendas/pantalon.jpg" alt="Pantalón" class="img-tienda">
+                <p>Pantalón</p>
+            </div>
+            <div class="imagen-wrapper">
+                <img src="tipoPrendas/polo.jpg" alt="Polo" class="img-tienda">
+                <p>Polo</p>
+            </div>
+            <div class="imagen-wrapper">
+                <img src="tipoPrendas/polera.jpg" alt="Polera" class="img-tienda">
+                <p>Polera</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 UrTianguis. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="scripts/filter.js"></script>
+</body>
+</html>
+    
